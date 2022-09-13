@@ -1,0 +1,81 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  position: relative;
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+nav a {
+  margin-right: 10px;
+  padding: 5px;
+  color: black;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+nav a:last-child {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid black;
+}
+
+h2{
+  margin: 40px 10% 20px;
+  align-self: flex-start;
+  font-size: 28px;
+}
+
+form {
+  margin-left: 10%;
+  align-self: flex-start;
+}
+
+.table {
+  width: 80%;
+  border: none;
+  margin: 20px  0;
+}
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 18px;
+}
+.table thead tr th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table thead tr th:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.table tbody td {
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+  background: #f3f3f3;
+}
+.table tbody tr td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.table tbody tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}

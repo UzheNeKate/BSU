@@ -1,0 +1,42 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin: 20px 10%;
+  align-self: flex-start;
+}
+header a {
+  padding: 10px;
+  color: black;
+  font-size: 21px;
+  text-decoration: none;
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.4);
+  border-radius: 10px;
+}
+
+header a:hover {
+  background: #f3f3f3;
+}
+
+h3{
+  margin: 0;
+}
+
+p{
+  margin: 3px;
+  font-size: 18px;
+}
+
+form {
+  position: absolute;
+  left: calc(50vw - 260px);
+  top: calc(50vh - 230px);
+  width: 400px;
+  height: 330px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0 rgba(38, 60, 80, 0.3);
+}

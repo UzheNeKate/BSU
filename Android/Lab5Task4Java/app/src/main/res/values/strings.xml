@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab5Task4Java</string>
+    <string name="https_t_me_kroshka_valoshka">https://t.me/kroshka_valoshka</string>
+    <string name="hobbies_nreading_ngraphics_design_npainting">\t\tHobbies:\n- reading \n- graphics design\n- painting</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="profilephoto">profilePhoto</string>
+</resources>

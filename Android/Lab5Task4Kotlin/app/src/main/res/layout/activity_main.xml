@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.25"
+        android:contentDescription="@string/profilephoto"
+        app:srcCompat="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/linkView"
+        android:layout_width="match_parent"
+        android:layout_height="561dp"
+        android:layout_weight="1"
+        android:height="60dp"
+        android:autoLink="web"
+        android:gravity="center"
+        android:maxHeight="60dp"
+        android:minHeight="60dp"
+        android:text="@string/https_t_me_kroshka_valoshka"
+        android:textColor="#009688"
+        android:textColorLink="#E8BB1AC1"
+        android:textSize="20sp"
+        app:firstBaselineToTopHeight="@dimen/cardview_default_elevation"
+        app:lineHeight="60dp" />
+
+    <TextView
+        android:id="@+id/hobbyView"
+        android:layout_width="match_parent"
+        android:layout_height="638dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/t_thobbies_n_reading_n_graphics_design_n_painting"
+        android:textColor="#B812D5"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnSubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_weight="1"
+        android:height="0.1dp"
+        android:insetLeft="100dp"
+        android:insetTop="5dp"
+        android:insetRight="100dp"
+        android:insetBottom="65dp"
+        android:text="@string/subscribe"
+        android:textSize="20sp"
+        android:typeface="serif" />
+</LinearLayout>

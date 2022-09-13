@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rating Images</string>
+    <string name="bt_go">Go</string>
+    <string name="img_not_found">We did not found anything</string>
+    <string name="like">👍</string>
+    <string name="dislike">👎</string>
+    <string name="liked_reaction">You liked this pic</string>
+    <string name="disliked_reaction">You disliked this pic</string>
+</resources>

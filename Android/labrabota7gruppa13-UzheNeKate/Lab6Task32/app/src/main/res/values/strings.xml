@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Угадай число!</string>
+    <string name="behind">Недолет!</string>
+    <string name="ahead">Перелет!</string>
+    <string name="hit">В точку!</string>
+    <string name="input_value">Ввести значение</string>
+    <string name="play_more">Сыграть еще</string>
+    <string name="try_to_guess">Попробуйте угадать число (1 &#8211; 100)</string>
+    <string name="error">Неверный ввод!</string>
+    <string name="not_valid">Введите число от 1 до 100!</string>
+    <string name="empty">Пожалуйста, введите число!</string>
+    <string name="exit">Выйти</string>
+    <string name="congratulations">Поздравляем! Вы угадали!!!</string>
+    <string name="number">Количество попыток</string>
+</resources>

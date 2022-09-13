@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="delete">Выдаліць</string>
+    <string name="app_name">Калькулятар</string>
+    <string name="clear_all">Ачысціць усё</string>
+    <string name="rotation">Паварот</string>
+    <string name="alpha">Празрыстасць</string>
+    <string name="scale">Маштабаванне</string>
+    <string name="animate">Анімаваць</string>
+</resources>

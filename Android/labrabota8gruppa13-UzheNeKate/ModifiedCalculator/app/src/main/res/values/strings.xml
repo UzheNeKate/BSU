@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="delete">Delete</string>
+    <string name="clear_all">Clear all</string>
+    <string name="tab_linear" translatable="false">ax+b</string>
+    <string name="tab_square" translatable="false">ax²+bx+c</string>
+    <string name="tab_cubic" translatable="false">ax³+bx²+cx+d</string>
+    <string name="rotation">Rotation</string>
+    <string name="alpha">Alpha</string>
+    <string name="scale">Scale</string>
+    <string name="animate">animate</string>
+</resources>

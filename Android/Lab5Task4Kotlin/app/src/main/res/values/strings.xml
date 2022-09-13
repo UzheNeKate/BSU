@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab5Task4Kotlin</string>
+    <string name="https_t_me_kroshka_valoshka">https://t.me/kroshka_valoshka</string>
+    <string name="t_thobbies_n_reading_n_graphics_design_n_painting">\t\tHobbies:\n- reading \n- graphics design\n- painting</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="profilephoto">profilePhoto</string>
+</resources>

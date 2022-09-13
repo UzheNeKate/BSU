@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab9Task42</string>
+    <string name="where">Where</string>
+    <string name="update_cars">Update cars</string>
+    <string name="values">Values</string>
+    <string name="name">Name</string>
+    <string name="update">Update</string>
+    <string name="message_invalid">Incorrect input values</string>
+    <string name="manufacture">manufacture</string>
+    <string name="year">year</string>
+    <string name="model">model</string>
+    <string name="insert">insert</string>
+    <string name="insert_into_cars">Insert into cars</string>
+</resources>

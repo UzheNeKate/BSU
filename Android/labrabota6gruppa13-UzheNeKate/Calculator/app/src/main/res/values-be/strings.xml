@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="delete">Выдаліць</string>
+    <string name="app_name">Калькулятар</string>
+    <string name="clear_all">Ачысціць усё</string>
+</resources>

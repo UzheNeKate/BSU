@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TabsAndSwipe</string>
+    <string name="title_section1">Лента</string>
+    <string name="title_section2">Фото</string>
+    <string name="title_section3">Карта</string>
+    <string name="first_view">First view</string>
+    <string name="second_view">Second view</string>
+    <string name="third_view">Third view</string>
+    <string name="lenta">picture</string>
+    <string name="photo">photo</string>
+    <string name="map">map</string>
+</resources>

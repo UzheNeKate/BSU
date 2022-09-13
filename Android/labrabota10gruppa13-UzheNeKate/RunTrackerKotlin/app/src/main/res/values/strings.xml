@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Run Tracker Kotlin</string>
+    <string name="latitude_f">Latitude: %f</string>
+    <string name="longitude_f">Longitude: %f</string>
+    <string name="started_s">Started: %s</string>
+    <string name="elapsed_f_s">Elapsed: %f s</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>

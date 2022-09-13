@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="ViewAppender" fileName="logs/view.log" append="true">
+            <PatternLayout pattern="%d, %t - %c{1}, %M (%L): %m%n"/>
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d, %level: %m%n"/>
+        </Console>
+        <File name="ControllerAppender" fileName="logs/controller.log" append="true">
+            <PatternLayout pattern="%d, %level - %M (%L): %m%n"/>
+        </File>
+        <File name="ParsersAppender" fileName="logs/parser.log" append="true">
+            <PatternLayout pattern="%d, %level - %M (%L): %m%n"/>
+        </File>
+        <File name="ModelAppender" fileName="logs/model.log" append="true">
+            <PatternLayout pattern="%d, %level - %M (%L): %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="View" level="info">
+            <AppenderRef ref="ViewAppender"/>
+        </Logger>
+        <Logger name="Controller" level="info">
+            <AppenderRef ref="ControllerAppender"/>
+        </Logger>
+        <Logger name="Parsers" level="info">
+            <AppenderRef ref="ParsersAppender"/>
+        </Logger>
+        <Logger name="Model" level="info">
+            <AppenderRef ref="ModelAppender"/>
+        </Logger>
+        <Root level="debug">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>

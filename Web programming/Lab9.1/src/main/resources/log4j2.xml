@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="DaoAppender" fileName="logs/dao.log" append="true">
+            <PatternLayout pattern="%d, %t - %c{1}, %M (%L): %m%n"/>
+        </File>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d, %level: %c{1} %m%n"/>
+        </Console>
+        <File name="ControllerAppender" fileName="logs/controller.log" append="true">
+            <PatternLayout pattern="%d, %level - %M (%L): %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="model.dao" level="info">
+            <AppenderRef ref="DaoAppender"/>
+        </Logger>
+        <Logger name="controller" level="info">
+            <AppenderRef ref="ControllerAppender"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>

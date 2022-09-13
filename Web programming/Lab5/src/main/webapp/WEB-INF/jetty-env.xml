@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+<Configure >
+    <New id="DSTest" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/DSTest</Arg>
+        <Arg>
+            <New class="org.postgresql.ds.PGSimpleDataSource">
+                <Set name="Url">jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/dfqgvudmef4pad?sslmode=require </Set>
+                <Set name="User">uwnumrqvpjhxtz</Set>
+                <Set name="Password">77db2f56e9c728c878cf9c90d55064ba617cf6b33ddd632b2a0d0780cec60fc9</Set>
+                <Set name="DatabaseName"> dfqgvudmef4pad?sslmode=require </Set>
+                <Set name="ServerName">ec2-63-32-248-14.eu-west-1.compute.amazonaws.com</Set>
+                <Set name="PortNumber">5432</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>

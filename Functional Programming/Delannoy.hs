@@ -1,6 +1,6 @@
 --Врублевская Екатерина, Числа Деланнуа
 
-delannoy :: Integral a => a -> a -> a 
+delannoy :: Int -> Int -> Int
 
 delannoy 0 y = 1
 delannoy x 0 = 1

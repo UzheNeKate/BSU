@@ -1,4 +1,20 @@
 import Data.Char (isDigit)
+import Data.Map
+
+monthDaysCount = fromList [
+    (1, 31),
+    (2, 28),
+    (3, 31),
+    (4, 30),
+    (5, 31),
+    (6, 30),
+    (7, 31),
+    (8, 31),
+    (9, 30),
+    (10, 31),
+    (11, 30),
+    (12, 31)
+  ]
 
 data Date = Date {year:: Int, month:: Int, day:: Int}
 
@@ -35,9 +51,28 @@ newDate :: Int -> Int -> Int -> Date
 newDate y m d | isDateValid d m y = Date y m d
               | otherwise = error "newDate: incorrect date"
 
-addDays :: Date -> Int -> Date
-addDays (Date y m d) n = 
+isLeapYear:: Int -> Bool
+isLeapYear y = y `mod` 400 == 0 || (y `mod` 100 /= 0 && y `mod` 4 == 0)
 
+addDays :: Date -> Int -> Date
+addDays d 0 = d
+addDays (Date y m d) n = 
+  let days
+         | isLeapYear y && (m == 2) = monthDaysCount ! m + 1
+         | otherwise = monthDaysCount ! m
+      newDate 
+         | (d == days) && (m == 12) = Date 1 1 (y + 1)
+         |  d == days = Date 1 (m + 1) y
+         | otherwise = Date (d + 1) m y
+  in addDays newDate (n - 1)  
 
 subtractDates :: Date -> Date -> Int
-subtractDates (Date y1 m1 d1) (Date y2 m2 d2) = 
+subtractDates d1 d2 
+   | d1 < d2 = - subtractHelper d2 d1 0
+   | otherwise = subtractHelper d1 d2 0 
+  
+
+subtractHelper :: Date -> Date -> Int -> Int
+subtractHelper d1 d2 diff 
+   | d1 == d2 = diff
+   | otherwise = subtractHelper d1 (addDays d2 1) (diff + 1)

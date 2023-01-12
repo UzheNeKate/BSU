@@ -40,3 +40,15 @@ instance NumberSet [Bool] where
   intersect [] a = []
 
   union (a:as) (b:bs) = (a || b) : union as bs 
+
+  toList s = toListHelper s 1
+
+  toNumberSet l = toNumberSetHelper (sort l)
+
+  toListHelper (s:ss) cur
+    | s = cur : toNumberSetHelper ss (cur + 1)
+    | otherwise toNumberSetHelper ss (cur + 1)
+  toListHelper [] _ = []
+
+  toNumberSetHelper (l:ls) = (replicate (l - 1) False) ++ [True] ++ toNumberSetHelper (map (subtract l) ls)
+  toNumberSetHelper [] = []
